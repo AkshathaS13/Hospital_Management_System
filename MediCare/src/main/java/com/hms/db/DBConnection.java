@@ -14,8 +14,8 @@ public class DBConnection {
 			//step:1 for connection - load the driver class 
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			
-			//step:2- create a connection
-			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/hospitals","root","Ravikumar@7862");
+			// step:2 - create a connection (use your local MySQL password; avoid committing real secrets to public repos)
+			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/hospitals", "root", "YOUR_MYSQL_PASSWORD");
 			
 		} catch (Exception e) {
 			e.printStackTrace();
